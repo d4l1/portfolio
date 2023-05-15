@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,9 +6,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  @Output() componentSelected = new EventEmitter<string>();
+  @Output() sectionSelected = new EventEmitter<string>();
 
-  selectComponent(component: string): void {
-    this.componentSelected.emit(component);
+  scrollToSection(section: string): void {
+    this.sectionSelected.emit(section);
   }
 }

@@ -7,8 +7,8 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { PortfolioComponent } from './shared/portfolio/portfolio.component';
 import { AboutComponent } from './shared/about/about.component';
-import { ContactComponent } from './shared/contact/contact.component';
 import { BackgroundComponent } from './layouts/background/background.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -17,12 +17,12 @@ import { BackgroundComponent } from './layouts/background/background.component';
     FooterComponent,
     PortfolioComponent,
     AboutComponent,
-    ContactComponent,
     BackgroundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
