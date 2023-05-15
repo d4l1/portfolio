@@ -2,7 +2,9 @@
 
 .portfolio {
   &__container {
-    background: white;
+    background: #fff;
+    display: flex;
+    justify-content: center;
   }
 
   &__list {
@@ -10,8 +12,8 @@
     list-style: none;
 
     @media only screen and (min-width: 768px) {
-      display: flex;
       align-items: center;
+      display: flex;
       justify-content: center;
     }
   }
