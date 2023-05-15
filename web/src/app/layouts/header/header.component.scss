@@ -1,0 +1,47 @@
+@import '../../base/variables';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $light-color;
+
+  &__logo {
+    margin: 0 auto;
+
+    @media only screen and (min-width: 768px) {
+      margin: initial;
+    }
+  }
+
+  &__image {
+    height: auto;
+    width: 6rem;
+  }
+
+  &__content {
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+      align-items: center;
+      display: flex;
+      padding: 1rem;
+    }
+
+    &-list {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &-items {
+      list-style: none;
+    }
+
+    &-links {
+      font: 1.2rem 'Open Sans', sans-serif;
+      color: $dark-color;
+      text-decoration: none;
+    }
+  }
+}

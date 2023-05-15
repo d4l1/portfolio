@@ -1,0 +1,106 @@
+@import '../../base/variables';
+
+.about {
+  &__container {
+    display: block;
+
+    @media only screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__content {
+    padding: 2rem;
+    width: auto;
+
+    @media only screen and (min-width: 768px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 50%;
+    }
+
+    &-title {
+      font: $title-font;
+    }
+    &-subtitle {
+      font: $subtitle-font;
+    }
+    &-paragraph {
+      font: $paragraph-font;
+    }
+  }
+
+  &__timeline {
+    background: $light-color;
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+      padding: 2rem;
+      width: 50%;
+    }
+
+    &-resumen {
+      font: $paragraph-font;
+      padding: 1.5rem;
+    }
+
+    &-entry {
+      border-radius: .5rem;
+      margin: 1rem;
+      padding: 1.5rem;
+
+      &:hover {
+        background: $extra-light-color;
+        box-shadow: .5rem .5rem .5rem  rgba($dark-color, .1);
+        transition: all .3s;
+      }
+    }
+
+    &-title {
+      font: $subtitle-font;
+    }
+
+    &-description {
+      font: $paragraph-font;
+      margin-top: 1rem;;
+    }
+
+    &-date {
+      align-items: center;
+      color: $dark-color;
+      display: flex;
+      font: $paragraph-font;
+      justify-content: center;
+      width: 100%;
+
+      @media only screen and (min-width: 768px) {
+        margin-right: 1rem;
+      }
+    }
+
+    &-company {
+      display: none;
+
+      @media only screen and (min-width: 768px) {
+        display: block;
+        font: $subtitle-font;;
+        order: 3;
+      }
+    }
+
+    &-content {
+      order: 2;
+    }
+
+
+    &-links {
+      color: $dark-color;
+      display: block;
+      text-decoration: none;
+
+      @media only screen and (min-width: 768px) {
+        display: flex;
+      }
+    }
+  }
+}
