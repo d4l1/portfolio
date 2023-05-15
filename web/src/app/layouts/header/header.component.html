@@ -5,14 +5,11 @@
     <div class="header__content">
         <ul class="header__content-list">
             <li class="header__content-items">
-                <a class="header__content-links" href="#">about</a>
-            </li>
-            <li class="header__content-items">
-                <a class="header__content-links" href="#">portfolio</a>
-            </li>
-            <li class="header__content-items">
-                <a class="header__content-links" href="#">contact</a>
-            </li>
+                <a class="header__content-links" (click)="scrollToSection('about')">about</a>
+              </li>
+              <li class="header__content-items">
+                <a class="header__content-links" (click)="scrollToSection('portfolio')">portfolio</a>
+              </li>
         </ul>
     </div>
 </header>

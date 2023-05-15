@@ -1,6 +1,9 @@
-<app-header></app-header>
+<app-header (sectionSelected)="scrollToSection($event)"></app-header>
 <app-background></app-background>
-<app-about></app-about>
-<app-portfolio></app-portfolio>
-<app-contact></app-contact>
+<div id="about" class="about__container" #aboutSection>
+  <app-about></app-about>
+</div>
+<section id="portfolio" class="portfolio__container" #portfolioSection>
+  <app-portfolio></app-portfolio>
+</section>
 <app-footer></app-footer>
