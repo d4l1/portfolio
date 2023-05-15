@@ -10,6 +10,7 @@
   }
 
   &__content {
+    padding: 1.2rem;
     width: auto;
 
     @media only screen and (min-width: 768px) {
@@ -107,19 +108,28 @@
     &-technology {
       margin-top: 1rem;
 
+
+
       .technology {
         &__list {
+          align-items: center;
           display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
           list-style: none;
+
+          @media only screen and (min-width: 768px) {
+            flex-wrap: nowrap;
+          }
         }
 
         &__item {
-          color: $dark-color;
-          border-radius: 2rem;
-          padding: .1rem .4rem;
-          margin: .2rem;
           border: .1rem solid $main-color;
+          border-radius: 2rem;
+          color: $dark-color;
           font: $paragraph-font;
+          margin: .2rem;
+          padding: .1rem .4rem;
         }
       }
     }
